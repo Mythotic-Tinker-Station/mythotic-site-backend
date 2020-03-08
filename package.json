@@ -1,0 +1,23 @@
+{
+  "name": "mythotic-backend",
+  "version": "1.0.0",
+  "description": "Backend for the Mythotic-Tinkerstation website",
+  "main": "index.js",
+  "author": "MiFU",
+  "license": "MIT",
+  "dependencies": {
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.3",
+    "@types/mysql": "^2.15.9",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.8.3"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "dev": "ts-node-dev --respawn --transpileOnly ./server/server.ts",
+    "prod": "tsc && node ./build/app.js"
+  }
+}

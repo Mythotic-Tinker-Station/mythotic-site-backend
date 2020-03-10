@@ -1,6 +1,8 @@
 import * as mysql from 'mysql';
 import config from '../config';
 
+import Users from './db_users';
+
 export const Connection = mysql.createConnection(config.mysql);
 
 Connection.connect(err => {
@@ -8,3 +10,7 @@ Connection.connect(err => {
        console.log(err);
    } 
 })
+
+export default {
+    Users
+}

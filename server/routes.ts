@@ -17,4 +17,14 @@ router.get("/api/users", async (req, res) => {
 	}
 });
 
+router.get("/api/news", async (req, res) => {
+	try {
+		let news = await DB.NewsPosts.getNewsPosts();
+		res.json(news);
+	} catch (error) {
+		console.log(error);
+		res.sendStatus(500);
+	}
+})
+
 export default router;

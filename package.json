@@ -11,7 +11,7 @@
     "@types/react": "^16.9.35",
     "@types/sequelize": "^4.28.8",
     "@types/validator": "^12.0.1",
-    "aws-sdk": "^2.673.0",
+    "aws-sdk": "^2.814.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mariadb": "^2.2.0",
